@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/save"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/RadioGroupTap"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/PERSONAL"
+                style="@style/acount_radio_tap"
+                android:background="@drawable/drawable_tab_shape"
+                android:text="@string/PERSONAL"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/PASSWORD"
+                style="@style/acount_radio_tap"
+                android:background="@drawable/drawable_tab_shape_un"
+                android:text="@string/PASSWORD"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@color/colorPrimary" />
+        </RadioGroup>
+
+        <include
+            layout="@layout/password_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <include
+            layout="@layout/personal_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/cart_btn_shape"
+        android:text="@string/SAVE"
+        android:textColor="@android:color/white" />
+
+    <include
+        layout="@layout/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

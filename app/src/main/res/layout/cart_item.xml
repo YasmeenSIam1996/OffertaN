@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/shado">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/back_cart">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/Main_Cat_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius_top_left="11dip"
+                app:riv_corner_radius_top_right="11dp" />
+
+            <include
+                layout="@layout/loading_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame"
+            android:background="#F6F6F6"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorItemCart"
+                android:fontFamily="@font/sf_pro_text_medium"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name"
+                android:layout_alignParentStart="true"
+                android:text="0.0"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/price"
+                android:text="SR"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@color/SR_CART"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/delete_shape"
+            android:padding="7dp"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/data"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/plus_cart_shape"
+            android:padding="7dp"
+            android:src="@drawable/plus" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/data"
+            android:layout_toStartOf="@id/plus"
+            android:layout_toEndOf="@+id/minus"
+            android:gravity="center"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="1"
+            android:textColor="@color/COUNT_CART"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/data"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/minus_cart_shape"
+            android:padding="7dp"
+            android:src="@drawable/minus" />
+    </RelativeLayout>
+</RelativeLayout>

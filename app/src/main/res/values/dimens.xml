@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reset_margin">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">182dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="img_size_drawer">106dp</dimen>
+
+    <dimen name="titleSize">14sp</dimen>
+
+    <!-- item_cat  dimens-->
+    <dimen name="cat_img_size">76dp</dimen>
+    <dimen name="cat_name_size">11sp</dimen>
+
+    <!-- item brand dimens-->
+    <dimen name="brand_padding">12dp</dimen>
+    <dimen name="brandImgMargin">16dp</dimen>
+    <dimen name="imgBrandSize">53dp</dimen>
+
+
+    <!--item_cat_activity  dimens-->
+    <dimen name="catactvity_card_sizeW">111.5dp</dimen>
+    <dimen name="catactvity_card_sizeH">127dp</dimen>
+    <dimen name="catactvity_img_sizeW">107.5dp</dimen>
+    <dimen name="catactvity_img_sizeH">97.7dp</dimen>
+    <dimen name="tv_name_size">11sp</dimen>
+
+    <!-- home dimens-->
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="view_h">3dp</dimen>
+
+    <!-- item product-->
+    <dimen name="itemP_card_sizeW">111.5dp</dimen>
+    <dimen name="itemP_card_sizeH">143dp</dimen>
+    <dimen name="img_product_size">100dp</dimen>
+    <dimen name="tv_title_size">12sp</dimen>
+    <dimen name="margin_LP_h">5dp</dimen>
+    <dimen name="Curr_Type_size">7sp</dimen>
+    <dimen name="img_prd_margin">4dp</dimen>
+    <dimen name="fav_count">9sp</dimen>
+    <dimen name="tv_price_size">11sp</dimen>
+
+
+    <!-- product details-->
+    <dimen name="pTitleSize">16sp</dimen>
+    <dimen name="pSubTitleSize">10sp</dimen>
+    <dimen name="pPriceSize">25sp</dimen>
+    <dimen name="pDescSize">12sp</dimen>
+    <dimen name="likeSizePD">52dp</dimen>
+
+
+</resources>

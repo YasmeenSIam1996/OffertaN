@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "548679244746",
+    "firebase_url": "https://offertastore-700a6.firebaseio.com",
+    "project_id": "offertastore-700a6",
+    "storage_bucket": "offertastore-700a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548679244746:android:a38d258655aa2e8c",
+        "android_client_info": {
+          "package_name": "user.offerta.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548679244746-rvjndkodvtr148bkns3eqqtgde0bca5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "user.offerta.com",
+            "certificate_hash": "e633a441b066fecacb481f693859367899ad3f3e"
+          }
+        },
+        {
+          "client_id": "548679244746-3t3u4145cs0mm1ka9cdgor6ot6shlaun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANbQ2nfd-HZ7Pmm3aR6KfMj2zw-7q1DJs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548679244746-hk4bnugl062fcsh0vsbv717148ujkbk5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "548679244746-192ggqsic0fda1bpq9iutnus7c4m5au2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ict.OffertaStore"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

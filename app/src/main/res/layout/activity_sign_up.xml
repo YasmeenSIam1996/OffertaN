@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:fillViewport="true"
+    tools:ignore="RtlCompat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView style="@style/flower_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Activities.SignUpActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_sign" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp">
+
+                <ImageView
+                    style="@style/shado_back"
+                    android:layout_height="220dp"
+                    android:background="@drawable/shado_back2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        style="@style/MobileNo"
+                        android:hint="Name"
+                        android:inputType="textPersonName" />
+
+                    <View style="@style/View" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        style="@style/MobileNo"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                    <View style="@style/View" />
+
+                    <EditText
+                        android:id="@+id/etMobileNo"
+                        style="@style/MobileNo"
+                        android:digits="0123456789"
+                        android:hint="MOBILE NO."
+                        android:imeOptions="actionNext"
+                        android:nextFocusUp="@id/etEmail"
+                        android:nextFocusDown="@id/etPassword" />
+
+                    <View style="@style/View" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        style="@style/Password"
+                        android:hint="PASSWORD" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvForget"
+                    style="@style/Forget"
+                    android:fontFamily="@font/sf_pro_text_light"
+                    android:text="@string/forget_pass" />
+
+                <TextView
+                    android:id="@+id/tvNewUser"
+                    style="@style/NewUser"
+                    android:fontFamily="@font/sf_pro_text_light"
+                    android:text="@string/sign_in" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSign"
+                style="@style/btnSign"
+                android:text="@string/sign_in" />
+
+
+            <TextView
+                android:id="@+id/tvSkip"
+                style="@style/Skip"
+                android:text="@string/skip" />
+        </LinearLayout>
+
+        <ImageView style="@style/logo_sign" />
+
+        <include
+            layout="@layout/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</ScrollView>

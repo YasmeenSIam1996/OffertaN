@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@android:color/white"
+    app:layout_goneMarginTop="11dp">
+
+    <ImageView
+        android:id="@+id/bill"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_lay"
+        android:background="#F7F8FA"
+        android:padding="25dp"
+        android:src="@drawable/bill" />
+
+    <TextView
+        android:id="@+id/order_name"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/bill"
+        android:text="@string/ORDER"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/order_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:layout_toEndOf="@+id/order_name"
+        android:text="@string/ORDER"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_name"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/bill"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/dalor"
+            android:drawablePadding="3.4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:drawablePadding="3.4dp"
+            android:text="@string/SAR"
+            android:textColor="#18181A"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:drawableStart="@drawable/calendar"
+            android:drawablePadding="3.4dp"
+            android:text="@string/SAR"
+            android:textColor="#18181A"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/time"
+            android:drawablePadding="3.4dp"
+            android:text="@string/SAR"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textColor="#18181A"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/track"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="3.3dp"
+            android:layout_weight="1"
+            android:background="@drawable/track_shape"
+            android:text="@string/TRACK_ORDER"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/invoice"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/invoice_shape"
+            android:text="@string/SEE_INVOICE"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textColor="#131515"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

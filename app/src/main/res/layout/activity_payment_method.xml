@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activities.PaymentMethodActivity">
+
+    <LinearLayout
+        android:id="@+id/pay_lay"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="#00C8AA"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:drawableTop="@drawable/cash"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/CASH"
+            android:textColor="#5D3F2F" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#EBEBEB"
+            android:drawableTop="@drawable/visa"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/PAYMENT"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_new_place"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/pay_lay"
+        android:layout_margin="13dp"
+        android:background="@drawable/add_new_place_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ADD_NEW_PLACE"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_new_place"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/ChoosePlace"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/PlacesRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/data"
+        android:layout_below="@+id/text" />
+
+    <RelativeLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send"
+        android:background="@drawable/back_price_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16sp"
+        android:paddingTop="11dp"
+        android:paddingEnd="16sp"
+        android:paddingBottom="11dp">
+
+        <TextView
+            android:id="@+id/TOTAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/TOTAL"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:textColor="#343535"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/TOTAL"
+            android:text="@string/SAR"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:textColor="#343535"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:text="@string/SAR"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/cart_btn_shape"
+        android:text="@string/PAY_SEND_ORDER"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:textColor="@android:color/white" />
+
+    <include
+        layout="@layout/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

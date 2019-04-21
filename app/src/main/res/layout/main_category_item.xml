@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginEnd="17dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="RtlCompat">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/Main_Cat_image"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="9dip" />
+
+        <include
+            layout="@layout/loading_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minLines="3"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:text="bvbnvnbvbvbnvbnvnbnbvbnvn"
+        android:layout_gravity="center"
+        android:textColor="@color/MainCatTittleColor"
+        android:textSize="11sp"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

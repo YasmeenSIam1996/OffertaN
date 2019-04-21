@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:fillViewport="true"
+    tools:ignore="RtlCompat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView style="@style/flower_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Activities.SignUpActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_sign" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp">
+
+                <ImageView style="@style/shado_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp">
+
+                    <EditText
+                        android:id="@+id/etMobileNo"
+                        android:hint="MOBILE NO."
+                        android:nextFocusDown="@id/etPassword"
+                        android:imeOptions="actionNext"
+                        android:digits="0123456789"
+                        style="@style/MobileNo" />
+
+                    <View style="@style/View" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:hint="PASSWORD"
+                        style="@style/Password" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-40dp">
+
+                <TextView
+                    android:id="@+id/tvForget"
+                    android:text="@string/forget_pass"
+                    style="@style/Forget"
+                    android:fontFamily="@font/sf_pro_text_light"/>
+
+                <TextView
+                    android:id="@+id/tvNewUser"
+                    android:text="@string/new_user"
+                    android:fontFamily="@font/sf_pro_text_light"
+                    style="@style/NewUser" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSign"
+                android:text="@string/sign_in"
+
+                style="@style/btnSign" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="50dp" >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/btnImgFB"
+                        android:src="@drawable/facebook_logo"
+                        style="@style/btnImgFB" />
+
+                </FrameLayout>
+
+
+
+                <ImageButton
+                    android:id="@+id/btnImgGoogle"
+                    android:src="@drawable/google_plus"
+                    style="@style/ImgGoogle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSkip"
+                android:text="@string/skip"
+                style="@style/Skip" />
+        </LinearLayout>
+
+        <ImageView style="@style/logo_sign" />
+
+        <include
+            layout="@layout/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</ScrollView>
